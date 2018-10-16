@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <div class="container-fluid">
+    <h1>Your Dashboard</h1>
+    <form id="form" action="/designer_dashboard" method="POST">
+      <div class="form-group">
+        <div class="col-3">
+          <label for="exampleFormControlInput1">Introduce your new survey's name</label>
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" name="surveyName" id="surveyName-id" placeholder="introduce your survey">
+        </div>
+        <br>
+        <div class="col-4">
+          <button id="create-survey">
+            <small>Create Survey</small>
+          </button>
+        </div>
+      </div>
+      <div class="col-4">
+        <select class="custom-select" multiple name="users_select" id="user_selectID">
+          {{#each users}}
+          <option value="{{this.id}}">
+            {{this.username}}
+          </option>
+          {{/each}}
+        </select>
+      </div>
+
+    </form>
+  </div>
+  <hr>
+  <div class="container-fluid ">
+    <div class="row d-flex justify-content-center">
+      {{#each surveys}}
+      <div class="col-md-3 card">
+        <div class="card-body">
+        <a href="/designer_dashboard/{{this._id}}">{{this.title}}</a>
+        </div>
+        
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+</div>
+
+
+{{!-- esto lleva a los resultados de charts CAMBIAR A SURVEY DETAIL - DASHBOARD --}} {{!-- {{#each surveys}}
+<h3><a href="surveys/results/{{this._id}}">{{this.title}}</a></h3>
+{{/each}} --}}

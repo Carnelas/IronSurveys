@@ -1,0 +1,53 @@
+/* #9100FF
+#FFAD4D
+ */
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:#333A41;
+  }
+  .footer a {
+    color: #FFAD4D;
+    transition: all .5s ease;
+  }
+  
+
+  
+  /* desde aqui es el login y el signup */
+
+  .phrlogin {
+    font-size: 60px;
+    margin-top: 15%;
+  }
+
+  .formlog {
+  margin-top: 30%;
+  }
+
+
+.card{
+  margin:20px;
+  text-align: center;
+  
+  
+}
+.card-body{
+  margin: 0 auto;
+}
+
+.surveys-response-title{
+  padding:60px;
+}
+/*# sourceMappingURL=style.css.map */
